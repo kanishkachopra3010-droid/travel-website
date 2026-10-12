@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+}
+
+nav {
+  width: 200px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  background: #222;
+}
+
+nav a {
+  display: block;
+  padding: 12px 16px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #444;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#toggle {
+  display: none;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #0A6C74;
+  color: white;
+  cursor: pointer;
+}
+
+.btn {
+      background: #0a6c74;
+      color: white;
+      font-size: 28px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+}
+
+.blink-text {
+      display: inline-block;
+      animation: blink 1s infinite;
+    }
+
+@keyframes blink {
+      0%   { opacity: 1; }
+      50%  { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  

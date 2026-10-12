@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formbooking.css">
+    <title>form-booking</title>
+  </head>
+  
+  <body>
+      <center>
+        <h2>Join us and BOOK NOW</h2>
+      </center>
+      <form class="form-box" action="#" method="post">
+        <div class="field">
+        <p class="group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+        </p>
+
+        <p class="group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </p>
+
+        <p class="group">
+          <label for="psswd">Password:</label>
+          <input type="password" id="psswd" name="psswd" required>
+        </p>
+
+        <p class="group">
+          <label for="cont">Contact Number:</label>
+          <input type="tel" id="cont" name="cont" required>
+        </p>
+
+        <p class="group">
+          <label for="dest">Choose the Preferred Destination</label>
+          <select id="dest" name="dest" required>
+            <optgroup label="Asia Tours">
+              <option value="seoul">Seoul, South Korea</option>
+              <option value="bali">Bali, Indonesia</option>
+              <option value="tokyo">Tokyo, Japan</option>
+            </optgroup>
+            <optgroup label="Europe Tours">
+              <option value="rome">Rome, Italy</option>
+              <option value="paris">Paris, France</option>
+              <option value="zurich">Zurich, Switzerland</option>
+            </optgroup>
+            <option value="vancouver">Vancouver, Canada</option>
+            <option value="laketekapo">Lake Tekapo, New Zealand</option>
+            <option value="asia">Asia Tours</option>
+            <option value="europe">Europe Tours</option>
+          
+          </select>
+        </p>
+
+        <p class="group">
+          <label for="people">Number of Travellers:</label>
+          <input type="number" id="people" name="people" required>
+        </p>
+
+        <p class="group">
+          <label for="date">Travel Date preffered</label>
+          <input type="date" id="date" name="date" required>
+        </p>
+
+        <p class="group">
+          <label>Room Preference:</label><br>
+          <input type="radio" id="single" name="room" value="single">
+          <label for="single">Single Room</label><br>
+          <input type="radio" id="double" name="room" value="double" checked>
+          <label for="double">Double Room</label><br>
+          <input type="radio" id="suite" name="room" value="suite">
+          <label for="suite">Deluxe Suite</label>
+        </p>
+
+        <p class="group">
+          <label>Optional Activities:</label><br>
+          <input type="checkbox" id="act1" name="activities" value="guided_tour">
+          <label for="act1">Private Guided City Tour</label><br>
+          <input type="checkbox" id="act2" name="activities" value="airport_transfer">
+          <label for="act2">VIP Airport Transfers</label><br>
+          <input type="checkbox" id="act3" name="activities" value="insurance">
+          <label for="act3">Comprehensive Travel Insurance</label>
+        </p>
+
+        <p class="group">
+          <label for="requests">Special Requests / Dietary Requirements:</label><br>
+          <textarea id="requests" name="special_requests" rows="4" cols="30" placeholder="Mention any allergies or special notes here..."></textarea>
+        </p>
+
+        <p class="group">
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">I agree to the terms and conditions of Wanderlust Travels</label>
+        </p>
+
+        <p class="group">
+          <button type="submit">Book Now</button>
+          <button type="reset">Reset Booking</button>
+        </p>
+        </div>
+      </form>
+  </body>
